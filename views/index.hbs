@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Revising node</title>
+    </head>
+    <body>
+        <form method="post" action="/abc">
+            Name :<input type="text" name="item"><br>
+            <br>
+            <button type="submit">Add</button>
+        </form>
+        <ul>
+            {{#each task as |t|}}
+                <li>{{t}}</li>
+            {{/each}}
+        </ul>
+    </body>
+</html>
